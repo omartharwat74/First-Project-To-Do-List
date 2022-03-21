@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA3CC08E27E4F17F00B4AAE1 /* TodosModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA3CC08C27E4F17F00B4AAE1 /* TodosModel.xcdatamodeld */; };
 		EA7BC5CD27D687A800E93A86 /* StudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7BC5CC27D687A800E93A86 /* StudyVC.swift */; };
+		EAB5095727E8B4B7002D21E6 /* TodoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB5095627E8B4B7002D21E6 /* TodoStorage.swift */; };
 		EACB777D27DE2CF100A47C5A /* AddScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACB777C27DE2CF100A47C5A /* AddScreenVC.swift */; };
 		EAF240E827D6324C009D1B7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF240E727D6324C009D1B7F /* AppDelegate.swift */; };
 		EAF240EA27D6324C009D1B7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF240E927D6324C009D1B7F /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		EA3CC08D27E4F17F00B4AAE1 /* TodosModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodosModel.xcdatamodel; sourceTree = "<group>"; };
 		EA7BC5CC27D687A800E93A86 /* StudyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyVC.swift; sourceTree = "<group>"; };
+		EAB5095627E8B4B7002D21E6 /* TodoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStorage.swift; sourceTree = "<group>"; };
 		EACB777C27DE2CF100A47C5A /* AddScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScreenVC.swift; sourceTree = "<group>"; };
 		EAF240E427D6324C009D1B7F /* First Project To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First Project To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF240E727D6324C009D1B7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EAB5095127E8B172002D21E6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAF240FD27D63C8E009D1B7F /* TodosVC.swift */,
+				EA7BC5CC27D687A800E93A86 /* StudyVC.swift */,
+				EACB777C27DE2CF100A47C5A /* AddScreenVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EAB5095227E8B213002D21E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAF240ED27D6324C009D1B7F /* Main.storyboard */,
+				EAF2410127D65EEA009D1B7F /* TodosCells.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAB5095327E8B23B002D21E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAF2410327D65F83009D1B7F /* ArrayTodos.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EAB5095527E8B47E002D21E6 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				EAB5095627E8B4B7002D21E6 /* TodoStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		EAF240DB27D6324C009D1B7F = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +103,16 @@
 		EAF240E627D6324C009D1B7F /* First Project To Do List */ = {
 			isa = PBXGroup;
 			children = (
+				EAB5095527E8B47E002D21E6 /* Storage */,
 				EAF240E727D6324C009D1B7F /* AppDelegate.swift */,
 				EA3CC08C27E4F17F00B4AAE1 /* TodosModel.xcdatamodeld */,
 				EAF240E927D6324C009D1B7F /* SceneDelegate.swift */,
-				EAF240ED27D6324C009D1B7F /* Main.storyboard */,
 				EAF240F027D6324E009D1B7F /* Assets.xcassets */,
 				EAF240F227D6324E009D1B7F /* LaunchScreen.storyboard */,
 				EAF240F527D6324E009D1B7F /* Info.plist */,
-				EAF240FD27D63C8E009D1B7F /* TodosVC.swift */,
-				EAF2410127D65EEA009D1B7F /* TodosCells.swift */,
-				EAF2410327D65F83009D1B7F /* ArrayTodos.swift */,
-				EA7BC5CC27D687A800E93A86 /* StudyVC.swift */,
-				EACB777C27DE2CF100A47C5A /* AddScreenVC.swift */,
+				EAB5095327E8B23B002D21E6 /* Models */,
+				EAB5095227E8B213002D21E6 /* Views */,
+				EAB5095127E8B172002D21E6 /* View Controllers */,
 			);
 			path = "First Project To Do List";
 			sourceTree = "<group>";
@@ -156,6 +191,7 @@
 				EACB777D27DE2CF100A47C5A /* AddScreenVC.swift in Sources */,
 				EA3CC08E27E4F17F00B4AAE1 /* TodosModel.xcdatamodeld in Sources */,
 				EAF240E827D6324C009D1B7F /* AppDelegate.swift in Sources */,
+				EAB5095727E8B4B7002D21E6 /* TodoStorage.swift in Sources */,
 				EAF240FE27D63C8E009D1B7F /* TodosVC.swift in Sources */,
 				EAF240EA27D6324C009D1B7F /* SceneDelegate.swift in Sources */,
 				EAF2410427D65F83009D1B7F /* ArrayTodos.swift in Sources */,
